@@ -8,8 +8,8 @@ public:
     int getMin() const override ;
     void extractMin() override ;
     void meld(IHeap&) override ;
-    int size() const override ;
     void clear() override ;
+    int size() const override ;
 private:
     std::multiset<int> heap;
 };

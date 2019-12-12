@@ -1,3 +1,5 @@
+#pragma once
+
 class IHeap {
 public:
     virtual void insert(int) = 0;
@@ -6,4 +8,7 @@ public:
     virtual void meld(IHeap&) = 0;
     virtual int size() const = 0;
     virtual void clear() = 0;
+    bool empty() const {
+        return size() == 0;
+    }
 };
